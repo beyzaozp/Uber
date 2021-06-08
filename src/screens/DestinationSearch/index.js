@@ -8,13 +8,6 @@ const DestinationSearch = props => {
   const [originPlace, setOriginPlace] = useState(null);
   const [destinationPlace, setDestinationPlace] = useState(null);
 
-  useEffect(() => {
-    console.warn('useEffect is called');
-    if (originPlace && destinationPlace) {
-      console.warn('Redirect to result');
-    }
-  }, [originPlace, destinationPlace]);
-
   return (
     <SafeAreaView>
       <View style={styles.container}>
